@@ -15,11 +15,11 @@ students.map((data, index)=>{
     Class: ${data.class}
     Roll: ${data.roll}
     =============================================================
-    Subject        Marks         GPA      GRAD        GPA Result        GRAD Resul                                              CGPA    CGPAGRAD
+    Subject        Marks         GPA      GRAD        Average GPA         Average GRAD                                               CGPA    CGPAGRAD         Average CGPA          Average CGPAGRAD
     Bangla          ${data.bangla}          ${getGpa(data.bangla)}            ${getGrad(data.bangla)}                                                                                 ${getCgpa(data.bangla)}      ${getCgpaGrad(data.bangla)}         
     English         ${data.english}          ${getGpa(data.english)}            ${getGrad(data.english)}                                                                              ${getCgpa(data.english)}     ${getCgpaGrad(data.english)}
     Math            ${data.math}           ${getGpa(data.math)}            ${getGrad(data.math)}                                                                               ${getCgpa(data.math)}       ${getCgpaGrad(data.math)}
-    Science        ${data.science}           ${getGpa(data.science)}            ${getGrad(data.science)}         ${result.toFixed(2)}          ${gradResult(result.toFixed(2))}                                     ${getCgpa(data.science)}       ${getCgpaGrad(data.science)}                          ${CgpaResult.toFixed(2)}          ${getFinalCgpaGrad(CgpaResult.toFixed(2))}
+    Science        ${data.science}           ${getGpa(data.science)}            ${getGrad(data.science)}                ${result.toFixed(2)}          ${gradResult(result.toFixed(2))}                                     ${getCgpa(data.science)}       ${getCgpaGrad(data.science)}                                ${CgpaResult.toFixed(2)}          ${getFinalCgpaGrad(CgpaResult.toFixed(2))}
     Religion        ${data.religion}           ${getGpa(data.religion)}            ${getGrad(data.science)}                                                                           ${getCgpa(data.religion)}     ${getCgpaGrad(data.religion)}
     S.Science        ${data.social}           ${getGpa(data.social)}            ${getGrad(data.social)}                                                                               ${getCgpa(data.social)}       ${getCgpaGrad(data.social)}
 `);
