@@ -101,13 +101,13 @@ const getCgpaGrad=(marks)=>{
     }else if(marks>=40 && marks<45){
         grad='D';
     }else if(marks>=45 && marks<50){
-        cgpagrad='C';
+        grad='C';
     }else if(marks>=50 && marks<55){
         grad='C+';
     }else if(marks>=55 && marks<60){
         grad='B-';
     }else if(marks>=60 && marks<65){
-        cgpagrad='B';
+        grad='B';
     }else if(marks>=65 && marks<70){
         grad='B+';
     }else if(marks>=70 && marks<75){
@@ -123,25 +123,25 @@ const getCgpaGrad=(marks)=>{
 const getFinalCgpaGrad=(marks)=>{
     let grad;
 
-    if(marks>=0 && marks<40){
+    if(marks>=0 && marks<2.00){
         grad='F';
-    }else if(marks>=40 && marks<45){
+    }else if(marks>=2.00 && marks<2.25){
         grad='D';
-    }else if(marks>=45 && marks<50){
-        cgpagrad='C';
-    }else if(marks>=50 && marks<55){
+    }else if(marks>=2.25 && marks<2.50){
+        grad='C';
+    }else if(marks>=2.50 && marks<2.75){
         grad='C+';
-    }else if(marks>=55 && marks<60){
+    }else if(marks>=2.75 && marks<3.00){
         grad='B-';
-    }else if(marks>=60 && marks<65){
-        cgpagrad='B';
-    }else if(marks>=65 && marks<70){
+    }else if(marks>=3.00 && marks<3.25){
+        grad='B';
+    }else if(marks>=3.25 && marks<3.50){
         grad='B+';
-    }else if(marks>=70 && marks<75){
+    }else if(marks>=3.50 && marks<3.75){
         grad='A-';
-    }else if(marks>=75 && marks<80){
+    }else if(marks>=3.75 && marks<4.00){
         grad='A';
-    }else if(marks>=80){
+    }else if(marks>=4.00){
         grad='A+';
     }
     return grad;
